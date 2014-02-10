@@ -37,9 +37,7 @@ $(document).ready(function() {
   var myCatalogApp = new CatalogApp()
   var catalog = new Catalog()
 
-  setTimeout(function(){myCatalogApp.displayCollection(catalog)},1000);
-  // To give catalog time to asynchronously retrieve database entries
-  // There has to be a better way... need for event to be triggered upon synced to db
+  catalog.bind('sync', function(){myCatalogApp.displayCollection(catalog)})
 
   myCatalogApp.initialize()
 })
