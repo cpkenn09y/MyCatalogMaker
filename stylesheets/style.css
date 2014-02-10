@@ -24,6 +24,22 @@ body {
   float: right;
 }
 
+th {
+  border-right: 1px dashed;
+  border-left: 1px dashed;
+  border-bottom: 1px dashed;
+}
+
 td {
   width: 5%;
+  text-align: center;
+  border-right: 1px dashed;
+  border-left: 1px dashed;
+  border-bottom: 1px dashed;
+  height: 40px;
+  padding-top: 20px;
+}
+
+td.name {
+
 }

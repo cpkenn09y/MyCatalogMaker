@@ -1,3 +1,6 @@
+var DIMENSIONSUNIT = "ft"
+var WEIGHTUNIT = "lbs"
+
 var CatalogApp = function() {
 
 }
@@ -19,8 +22,13 @@ CatalogApp.prototype.createItem = function(event) {
   event.preventDefault()
   submittedForm = this
   var name = submittedForm["name"].value
-  var price = submittedForm["price"].value
-  var item = new Item({name: name, price: price}).save()
+  var description = submittedForm["description"].value
+  var width = submittedForm["width"].value + DIMENSIONSUNIT
+  var length = submittedForm["length"].value + DIMENSIONSUNIT
+  var height = submittedForm["height"].value + DIMENSIONSUNIT
+  var weight = submittedForm["weight"].value + WEIGHTUNIT
+  var price = Number(submittedForm["price"].value)
+  var item = new Item({name: name, description: description, width: width, length: length, height: height, weight: weight, price: price}).save()
   self.clearFormFields(submittedForm)
 }
 
