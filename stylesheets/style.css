@@ -20,8 +20,12 @@ body {
   text-align: center;
 }
 
-#create-items {
-  float: right;
+#catalog-container {
+  width: 80%;
+  background-color: blue;
+  padding: 1.5em;
+  height: 80%;
+  margin-left: 1em;
 }
 
 th {
@@ -30,7 +34,7 @@ th {
   border-bottom: 1px dashed;
 }
 
-td {
+div#catalog-container td {
   width: 5%;
   text-align: center;
   border-right: 1px dashed;
@@ -41,5 +45,47 @@ td {
 }
 
 td.name {
+
+}
+
+div#create-items {
+  float: right;
+  background-color: green;
+  padding: 1em;
+}
+
+div#bottom-spacing {
+  height: 2em;
+  width: 100%;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 1200px) {
+
+  #container {
+    background-color: orange;
+  }
+
+  div#create-items {
+    float: none;
+    text-align: center;
+  }
+
+  #catalog-container {
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #container {
+    background-color: black;
+  }
+
+  #catalog-container {
+    font-size: 0.7em;
+    width: 90%;
+  }
 
 }
