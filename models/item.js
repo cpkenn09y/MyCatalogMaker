@@ -11,5 +11,7 @@ var Item = Backbone.Model.extend({
     height: "unknown",
     weight: "unknown",
     price: 0
-  }
+  },
+
+  firebase: new Backbone.Firebase("mycatalogmaker.firebaseIO.com/items")
 })
