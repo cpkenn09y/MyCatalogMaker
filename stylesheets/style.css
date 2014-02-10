@@ -7,31 +7,42 @@ body {
   padding: 0;
   font-family: 'helvetica', 'arial', sans-serif;
   background-color: red;
+  margin: 0 auto;
+  background-image: url('../images/sunset.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #container {
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  background-color: yellow;
+  margin-bottom: 2em;
+  background-color: rgba(0, 76, 153, 0.5);
 }
 
 #title {
   text-align: center;
+  font-size: 4em;
 }
 
 #catalog-container {
   width: 80%;
-  background-color: blue;
+  background-color: rgba(255,255,255, 0.5);
   padding: 1.5em;
   height: 80%;
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 th {
   border-right: 1px dashed;
   border-left: 1px dashed;
   border-bottom: 1px dashed;
+  font-size: 1.2em;
 }
 
 div#catalog-container td {
@@ -50,25 +61,23 @@ td.name {
 
 div#create-items {
   float: right;
-  background-color: green;
+  background-color: rgba(204,255,255,1.0);
   padding: 1em;
 }
 
-div#bottom-spacing {
-  height: 2em;
-  width: 100%;
-  background-color: yellow;
+p#post-item {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 @media screen and (max-width: 1200px) {
 
-  #container {
-    background-color: orange;
-  }
-
   div#create-items {
     float: none;
     text-align: center;
+    background-color: transparent;
+    padding-top: 0px;
   }
 
   #catalog-container {
@@ -79,12 +88,8 @@ div#bottom-spacing {
 
 @media screen and (max-width: 1000px) {
 
-  #container {
-    background-color: black;
-  }
-
   #catalog-container {
-    font-size: 0.7em;
+    font-size: 0.8em;
     width: 90%;
   }
 
