@@ -4,6 +4,9 @@
   <head>
     <meta charset="UTF-8">
     <title>MyCatalogMaker</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -18,13 +21,18 @@
     <script src="/views/catalog_view.js"></script>
 
     <script src="/catalog_app.js"></script>
+    <div id="container">
+      <h1 id="title">My Catalog Maker</h1>
 
-    <form class="make-item">
-      <input type="text" name="name" placeholder="Name of Item"><br>
-      <input type="text" name="price" placeholder="Price in Cents"><br>
-      <input type="submit" value="Submit">
-    </form>
+      <div id="create-items">
+        <form class="make-item">
+          <input type="text" name="name" placeholder="Name of Item"><br>
+          <input type="text" name="price" placeholder="Price in Cents"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
-    <div id="catalog-container"></div>
+      <div id="catalog-container"></div>
+    </div>
   </body>
 </html>

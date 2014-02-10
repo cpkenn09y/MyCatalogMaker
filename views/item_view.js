@@ -1,8 +1,8 @@
 var ItemView = Backbone.View.extend({
 
-  tagName: "li",
+  tagName: "tr",
 
-  template : _.template("<span><%= get('name') %></span><span><%= get('price') %></span>"),
+  template : _.template("<td><%= get('name') %></td><td><%= get('price') %></td><td><%= get('description') %></td><td><%= get('width') %></td><td><%= get('length') %></td><td><%= get('height') %></td><td><%= get('weight') %></td>"),
 
   renderHTML : function(){
     this.$el.html(this.template(this.model))

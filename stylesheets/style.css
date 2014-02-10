@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'helvetica', 'arial', sans-serif;
+  background-color: red;
+}
+
+#container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  background-color: yellow;
+}
+
+#title {
+  text-align: center;
+}
+
+#create-items {
+  float: right;
+}
+
+td {
+  width: 5%;
+}

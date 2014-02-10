@@ -12,7 +12,7 @@ var CatalogView = Backbone.View.extend({
 
   render : function(){
     this.$el.empty()
-    this.$el.append('<ul class="item-list"></ul>')
+    this.$el.append('<table class="item-list"></table>')
     this.iterateCollection(this.collection)
   }
 })
