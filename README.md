@@ -1,6 +1,6 @@
 # Creating a Catalog Maker for a Shipwire Coding Challenge
 
-## Link to the live project: 
+## Link to the live project:
 http://cpkenn09y.github.io/MyCatalogMaker/
 
 ## Technology Choices:
@@ -30,13 +30,15 @@ http://cpkenn09y.github.io/MyCatalogMaker/
 * Devise a plan of execution
 * Trying to iterate over a collection as soon as the page loads caused problems
   * The collection instance had to first sync up with the db since asynchronous
-* Make it look presentable 
+* Make it look presentable
 
 ## For Funsies:
 
 * Create more items, and see the data immediately loaded into the DB
 * Get two computers and see the cross computer live-updating associated with making an item
 * Play around with screen resizing, to see the media queries at play
+
+Note: The actual coding of this project was completed within 24 hours.
 
 ## Future Improvements
 
@@ -47,4 +49,4 @@ http://cpkenn09y.github.io/MyCatalogMaker/
 * Add user registration or OAuth
 * Allow user to create multiple items with one click
 * Consider using handlebars.js
-    
+
