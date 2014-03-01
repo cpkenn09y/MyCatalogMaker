@@ -27,13 +27,13 @@
       <div id="create-items">
         <form class="make-item">
           <p id="post-item">Post a New Item:</p>
-          <input type="text" name="name" placeholder="Name of Item"><br>
-          <input type="text" name="description" placeholder="Description"><br>
-          <input type="text" name="width" placeholder="Width (ft)"><br>
-          <input type="text" name="length" placeholder="Length (ft)"><br>
-          <input type="text" name="height" placeholder="Height (ft)"><br>
-          <input type="text" name="weight" placeholder="Weight (lbs)"><br>
-          <input type="text" name="price" placeholder="Price in Cents"><br>
+          <input type="name" name="name" placeholder="Name of Item *" required="required" maxlength="30"><br>
+          <input type="text" name="description" placeholder="Description *" required "required" maxlength="100"><br>
+          <input type="number" name="width" placeholder="Width (ft)" max="10000"><br>
+          <input type="number" name="length" placeholder="Length (ft)" max="10000"><br>
+          <input type="number" name="height" placeholder="Height (ft)" max="10000"><br>
+          <input type="number" name="weight" placeholder="Weight (lbs)" max="10000"><br>
+          <input type="number" name="price" placeholder="Price in Cents *" required="required" max="9000000000"><br>
           <input type="submit" value="Submit">
         </form>
       </div>
