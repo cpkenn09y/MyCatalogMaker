@@ -1,4 +1,4 @@
-# Creating a Catalog Maker for a Shipwire Coding Challenge
+# Creating a Catalog Maker
 
 ## Link to the live project:
 http://cpkenn09y.github.io/MyCatalogMaker/
