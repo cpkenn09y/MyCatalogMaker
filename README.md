@@ -35,7 +35,6 @@ http://cpkenn09y.github.io/MyCatalogMaker/
 ## For Funsies:
 
 * Create more items, and see the data immediately loaded into the DB
-* Get two computers and see the cross computer live-updating associated with making an item
 * Play around with screen resizing, to see the media queries at play
 
 Note: The actual coding of this project was completed within 24 hours.
@@ -49,4 +48,11 @@ Note: The actual coding of this project was completed within 24 hours.
 * Add user registration or OAuth
 * Allow user to create multiple items with one click
 * Consider using handlebars.js
+
+
+public private and previledged
+
+Way to aceess a()
+
+
 
