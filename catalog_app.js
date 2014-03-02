@@ -21,16 +21,25 @@ CatalogApp.prototype.enableItemCreation = function() {
 CatalogApp.prototype.createItem = function(event) {
   event.preventDefault()
   submittedForm = this
-  var name = submittedForm["name"].value
-  var description = submittedForm["description"].value
-  var width = submittedForm["width"].value + DIMENSIONSUNIT
-  var length = submittedForm["length"].value + DIMENSIONSUNIT
-  var height = submittedForm["height"].value + DIMENSIONSUNIT
-  var weight = submittedForm["weight"].value + WEIGHTUNIT
-  var price = Number(submittedForm["price"].value)
-  that.catalog.add({name: name, description: description, width: width, length: length, height: height, weight: weight, price: price})
+  var width = submittedForm["width"].value
+  var length = submittedForm["length"].value
+  var height = submittedForm["height"].value
+  var weight = submittedForm["weight"].value
+  var newItemData = that.appendUnitsIfHasValue(width, length, height, weight)
+  newItemData["name"] = submittedForm["name"].value
+  newItemData["description"] = submittedForm["description"].value
+  newItemData["price"] = Number(submittedForm["price"].value)
+  that.catalog.add(newItemData)
   that.displayCollection(that.catalog)
   submittedForm.reset()
+}
+
+CatalogApp.prototype.appendUnitsIfHasValue = function(inputWidth,inputLength,inputHeight,inputWeight) {
+  inputWidth != "" ? inputWidth+=' '+DIMENSIONSUNIT : inputWidth = "N/A"
+  inputLength != "" ? inputLength+=' '+DIMENSIONSUNIT : inputLength = "N/A"
+  inputHeight != "" ? inputHeight+=' '+DIMENSIONSUNIT : inputHeight = "N/A"
+  inputWeight != "" ? inputWeight+=' '+WEIGHTUNIT : inputWeight = "N/A"
+  return {width: inputWidth, length: inputLength, height: inputHeight, weight: inputWeight}
 }
 
 CatalogApp.prototype.displayCollection = function(catalog) {
