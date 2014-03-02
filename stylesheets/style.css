@@ -81,6 +81,14 @@ p#post-item {
     padding-top: 0px;
   }
 
+  p#post-item {
+    color: chartreuse;
+  }
+
+  label#not-trolling {
+    color: yellow;
+  }
+
   #catalog-container {
     margin: 0 auto;
   }
