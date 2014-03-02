@@ -50,9 +50,4 @@ Note: The actual coding of this project was completed within 24 hours.
 * Consider using handlebars.js
 
 
-public private and previledged
-
-Way to aceess a()
-
-
 
